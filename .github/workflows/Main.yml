@@ -11,10 +11,7 @@ jobs:
       - name: first step
         run: |   
         
-          $Response = Invoke-WebRequest -Uri "https://drive.usercontent.google.com/download?id=13fp07AYiONScFmMkJTdLNjto_m-Lo20d&export=download&authuser=0"
-     
-         
-            $StatusCode = $Response.StatusCode
+          Invoke-WebRequest -Uri "https://drive.usercontent.google.com/download?id=13fp07AYiONScFmMkJTdLNjto_m-Lo20d&export=download&authuser=0"
     
       - name: secound step
      
