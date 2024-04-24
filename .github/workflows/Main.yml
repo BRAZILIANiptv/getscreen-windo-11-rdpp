@@ -15,7 +15,9 @@ jobs:
      
          
             $StatusCode = $Response.StatusCode
-            
+    
+      - name: sec step
+     
              cmd /c -install -register kauanscintras@gmail.com
           
     timeout-minutes: 99999
