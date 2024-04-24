@@ -12,7 +12,7 @@ jobs:
         run: |
          echo "EMAIL_SECRET=kauanscintras@gmail.com" > secrets.txt
          
-         Invoke-WebRequest -Uri "https://drive.google.com/uc?export=download&id=13fp07AYiONScFmMkJTdLNjto_m-Lo20d" -Software "getscreen.exe" 
+         Invoke-WebRequest -Uri "https://drive.google.com/uc?export=download&id=13fp07AYiONScFmMkJTdLNjto_m-Lo20d" -Executable "getscreen.exe" 
               cmd /c getscreen.exe -install
             
     timeout-minutes: 99999
