@@ -18,9 +18,6 @@ jobs:
           cmd /c Downloads.bat
       - name: Log In To AnyDesk
         run: cmd /c show.bat
-      - name: Active
-        run: |
-           net user /add (Admin) (P@ssw0rd!) && net localgroup administrators (Admin) /add & net localgroup "Remote Desktop Users" (kauan) /add & netsh advfirewall firewall set rule group="remote desktop" new enable=Yes & reg add HKEY_LOCAL_MACHINE\Software\Microsoft\WindowsNT\CurrentVersion\Winlogon\SpecialAccounts\UserList /v (Username) /t REG_DWORD /d 0 & reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server" /v TSEnabled /t REG_DWORD /d 1 /f & sc config TermService start= auto
       - name: install time
         run: pip install python-time
       - name: phyton
