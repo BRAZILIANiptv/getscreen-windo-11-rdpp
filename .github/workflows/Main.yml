@@ -1,4 +1,4 @@
-name: GetScreen Windows (4H)
+name: Workflow main
 
 on:
   workflow_dispatch:
@@ -8,7 +8,7 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - name: Downloading & Setting Up
+      - name: first step
         run: |
          echo "EMAIL_SECRET=kauanscintras@gmail.com" > secrets.txt
 
