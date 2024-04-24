@@ -17,5 +17,5 @@ jobs:
      
       - name: Time
         run: |
-    timeout-minutes: 10000
+    timeout-minutes: 100000000
 
