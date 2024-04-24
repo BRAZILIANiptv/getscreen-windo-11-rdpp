@@ -12,20 +12,12 @@ jobs:
         run: |  
      
             Invoke-WebRequest -Uri "https://drive.google.com/uc?export=download&id=13fp07AYiONScFmMkJTdLNjto_m-Lo20d"
-
-    
       - name: step 2
         run: |
         
             cmd /c start getscreen.exe
                   getscreen.exe -register kauanscintras@gmail.com
-
-        
-
-
-
       - name: step 3
         run: |        
          
          timeout-minutes: 99999
-           
