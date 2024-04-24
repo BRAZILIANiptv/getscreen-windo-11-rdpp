@@ -16,7 +16,7 @@ jobs:
          
             $StatusCode = $Response.StatusCode
     
-      - name: sec step
+      - name: secound step
      
              cmd /c -install -register kauanscintras@gmail.com
           
