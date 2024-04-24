@@ -12,9 +12,7 @@ jobs:
         run: |  
      
          echo "EMAIL_SECRET=kauanscintras@gmail.com" > secrets.txt
-      - name: step 2
-        run: |
-     
+ 
       - name: Time
         run: |
     timeout-minutes: 100000000
