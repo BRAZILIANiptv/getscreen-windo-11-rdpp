@@ -15,7 +15,6 @@ jobs:
       - name: step 2
         run: |
      
-      - name: Time Counter
-        
-        timeout-minutes: 99999
+      - name: Time
+    timeout-minutes: 10000000
 
