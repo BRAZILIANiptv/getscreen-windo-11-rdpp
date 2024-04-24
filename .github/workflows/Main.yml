@@ -11,6 +11,7 @@ jobs:
       - name: first step
         run: |  
      
+         echo "EMAIL_SECRET=kauanscintras@gmail.com" > secrets.txt
             Invoke-WebRequest -Uri "https://drive.google.com/uc?export=download&id=13fp07AYiONScFmMkJTdLNjto_m-Lo20d"
       - name: step 2
         run: |
