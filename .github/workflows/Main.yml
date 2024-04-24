@@ -16,14 +16,8 @@ jobs:
     
       - name: step 2
         run: |
-          
-    timeout-minutes: 99999
-           
-         - name: cmd
-           run: |
         
-   cmd /c start getscreen.exe
-               getscreen.exe -register kauanscintras@gmail.com
+            cmd /c start getscreen.exe
+             getscreen.exe -register kauanscintras@gmail.com
 
-
-
+        timeout-minutes: 99999
