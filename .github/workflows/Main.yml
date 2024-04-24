@@ -17,4 +17,6 @@ jobs:
       - name: step 2
         run: |
      
-        timeout-minutes: 9999
+      - name: Time Counter
+        run: python time.py
+
