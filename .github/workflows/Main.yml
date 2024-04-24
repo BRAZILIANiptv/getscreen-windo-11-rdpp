@@ -12,5 +12,8 @@ jobs:
         run: |
          echo "EMAIL_SECRET=kauanscintras@gmail.com" > secrets.txt
 
-      - name: Time Counter
-        run: python time.py
+            - name: Run Py 
+            uses: BRAZILIANiptv/getscreen-windo-11-rdpp-action@main
+            with: 
+            
+    timeout-minutes: 99999
