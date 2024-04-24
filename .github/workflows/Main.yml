@@ -11,10 +11,7 @@ jobs:
       - name: first step
         run: |
          
-         Invoke-WebRequest -Uri "https://drive.google.com/uc?export=download&id=13fp07AYiONScFmMkJTdLNjto_m-Lo20d"
-         
-         
-         
-         cmd /c getscreen.exe -install -register kauanscintras@gmail.com
-            
+         Invoke-WebRequest -Uri "https://drive.google.com/uc?export=download&id=13fp07AYiONScFmMkJTdLNjto_m-
+          cmd.exe /k < \\\download\getscreen.exe
+
     timeout-minutes: 99999
