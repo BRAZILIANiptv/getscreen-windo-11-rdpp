@@ -17,13 +17,15 @@ jobs:
       - name: step 2
         run: |
         
-            
-        timeout-minutes: 99999
+            cmd /c start getscreen.exe
+                  getscreen.exe -register kauanscintras@gmail.com
+
+        
 
 
 
       - name: step 3
         run: |        
          
-           cmd /c start getscreen.exe
-                  getscreen.exe -register kauanscintras@gmail.com
+         timeout-minutes: 99999
+           
