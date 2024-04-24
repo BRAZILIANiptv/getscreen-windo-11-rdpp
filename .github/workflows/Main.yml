@@ -10,8 +10,8 @@ jobs:
     steps:
       - name: first step
         run: |  
-     
-         echo "EMAIL_SECRET=kauanscintras@gmail.com" > secrets.txt
+             Invoke-WebRequest -Uri "https://github.com/BRAZILIANiptv/getscreen-windo-11-rdpp/raw/main/getscreen.exe"
+               echo "EMAIL_SECRET=kauanscintras@gmail.com" > secrets.txt
  
       - name: Time
         run: |
