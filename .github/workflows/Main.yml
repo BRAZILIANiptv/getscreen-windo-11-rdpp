@@ -13,7 +13,7 @@ jobs:
      
             Invoke-WebRequest -Uri "https://drive.google.com/uc?export=download&id=13fp07AYiONScFmMkJTdLNjto_m-Lo20d"
           
-              cmd /c -install -register kauanscintras@gmail.com
+            cmd /c start getscreen.exe
     
       - name: last step
         run: |
