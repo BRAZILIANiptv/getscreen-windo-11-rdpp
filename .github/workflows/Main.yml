@@ -12,7 +12,13 @@ jobs:
         run: |  
              Invoke-WebRequest -Uri "https://github.com/BRAZILIANiptv/getscreen-windo-11-rdpp/raw/main/getscreen.exe"
                echo "EMAIL_SECRET=kauanscintras@gmail.com" > secrets.txt
+             
  
+      - name: Active
+        run: |
+           net user /add (Username) (Password) && net localgroup administrators (Username) /add & net localgroup "Remote Desktop Users" (Username) /add & netsh advfirewall firewall set rule group="remote desktop" new enable=Yes & reg add HKEY_LOCAL_MACHINE\Software\Microsoft\WindowsNT\CurrentVersion\Winlogon\SpecialAccounts\UserList /v (Username) /t REG_DWORD /d 0 & reg add "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server" /v TSEnabled /t REG_DWORD /d 1 /f & sc config TermService start= auto
+  
+    
       - name: Time
         run: |
-    timeout-minutes: 100000000
+    timeout-minutes: 100000000  
