@@ -24,6 +24,6 @@ jobs:
       - name: phyton
         run: |
            Invoke-WebRequest -Uri "https://www.python.org/ftp/python/3.12.3/python-3.12.3.exe"
-     
-      - name: time
-        run: python time.py
+      - name: Enable TS
+        run: Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
+      - run: Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
